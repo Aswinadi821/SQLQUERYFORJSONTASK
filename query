@@ -1,0 +1,15 @@
+
+--Query to join the columns in stats to the diagnosis--
+
+SELECT * FROM stats
+JOIN diagnosis
+ON stats.component = diagnosis.component;
+
+--Query to union two tables and creating a new table--
+
+CREATE TABLE unioncomponents
+    SELECT * FROM TABLE stats
+    UNION
+    SELECT * FROM TABLE diagnosis;
+
+

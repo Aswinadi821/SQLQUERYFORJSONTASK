@@ -1,0 +1,49 @@
+{
+    "SessionID": "0xefh",
+    "DataLineID": "MED12345",
+    "JobType": "Request",
+    "Details": {
+        "FilteringCoditions": {
+            "UNIONComponents": {
+                "UOperator": "UNION",
+                "Conditions": [
+                    {
+                        "Component": "Stats",
+                        "Conditions": {
+                            "Gender": [
+                                "Female"
+                            ],
+                            "Vital Status": [
+                                "Alive"
+                            ],
+                            "Location": [
+                                "India"
+                            ],
+                            "Age": {
+                                "MinAge": 30,
+                                "MaxAge": 200
+                            }
+                        }
+                    },
+                    {
+                        "Component": "Diagnosis",
+                        "Conditions": {
+                            "DiagnosisDate": {
+                                "MinDate": "01/01/2019",
+                                "MaxDate": "12/31/2021"
+                            },
+                            "ICD9Code": [
+                                "ABC01",
+                                "ABC02"
+                            ],
+                            "ICD10Code": [
+                                "DEF01",
+                                "DEF02"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
