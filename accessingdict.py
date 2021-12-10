@@ -14,7 +14,7 @@ def getvaluebycomponent(read_content,val2,val3):
 
                 elif (value[1][val2]) == val3:
                      print(value[1])
-def getsqlfunc(x):
+def getsqlfunc(jsonvalue):
     sql="""SELECT * FROM stats
            JOIN diagnosis
            ON stats.component = diagnosis.component
@@ -25,6 +25,6 @@ def getsqlfunc(x):
              SELECT * FROM TABLE diagnosis;"""
     return sql
 
-x=getvaluebycomponent(read_content,val2,val3)
-print(getsqlfunc(x))
+jsonvalue=getvaluebycomponent(read_content,val2,val3)
+print(getsqlfunc(jsonvalue))
 
